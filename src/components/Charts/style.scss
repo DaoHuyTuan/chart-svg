@@ -1,0 +1,32 @@
+html, body {
+    padding: 0px;
+    margin: 0;
+}
+
+.App {
+    margin-top: 300px;
+    margin-left: 700px;
+    & .charts {
+        width:1000px;
+        height: 500px;
+        border: 1px solid #ddd;
+        
+        & .column {
+            width: 40px;
+            & .column__rect {
+                width: 40px;
+                fill: #554ff2;
+                &:hover {
+                    fill: #7c90ff;
+                    & ~ .column__text {
+                        fill: #7c90ff;
+                    }
+                }
+                
+            }
+            & .column__text {
+                fill: #ffffff;
+            }
+        }
+    }
+}
